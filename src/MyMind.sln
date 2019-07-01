@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMind.Web", "MyMind.Web\MyMind.Web.csproj", "{803F53FC-064F-41FD-A3CA-EFAA0F587AA1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMind.Web", "MyMind.Web\MyMind.Web.csproj", "{E2503ABF-1657-431F-B34D-B213F7C02600}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{803F53FC-064F-41FD-A3CA-EFAA0F587AA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{803F53FC-064F-41FD-A3CA-EFAA0F587AA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{803F53FC-064F-41FD-A3CA-EFAA0F587AA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{803F53FC-064F-41FD-A3CA-EFAA0F587AA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2503ABF-1657-431F-B34D-B213F7C02600}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2503ABF-1657-431F-B34D-B213F7C02600}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2503ABF-1657-431F-B34D-B213F7C02600}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2503ABF-1657-431F-B34D-B213F7C02600}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
