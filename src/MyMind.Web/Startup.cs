@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using MyMind.Web.Database;
 using MyMind.Web.IoC;
 using Swashbuckle.AspNetCore.Swagger;
 
@@ -58,8 +59,9 @@ namespace MyMind.Web
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            MongoConfiguration.Initialize();
             app.UseSwagger();
+            app.UseCors("MyPolicy");
 
             app.UseSwaggerUI(c =>
             {
