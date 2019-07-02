@@ -8,10 +8,11 @@ namespace MyMind.Web.Areas.Emotions
 {
     public class EmotionsController : BaseApiController
     {
-        [HttpGet]
-        public IActionResult Index()
+        [HttpPost]
+        public IActionResult GetEmotions()
         {
-            return View();
+
+            throw new NotImplementedException();
         }
     }
 }
