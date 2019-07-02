@@ -1,1 +1,1 @@
-# JustQuiz
+# MyMind
