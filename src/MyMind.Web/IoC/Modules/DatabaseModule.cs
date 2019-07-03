@@ -18,13 +18,13 @@ namespace MyMind.Web.IoC.Modules
 
         protected override void Load(ContainerBuilder builder)
         {
-            builder.Register((c, p) => new MongoClient(_configuration["MongoDB:ConnectionString"])) //todo move to appsettings.json
+            builder.Register((c, p) => new MongoClient(_configuration["MongoDB:ConnectionString"]))
                 .SingleInstance();
 
             builder.Register((c, p) =>
             {
                 var client = c.Resolve<MongoClient>();
-                var database = client.GetDatabase(_configuration["MongoDB:Database"]); //todo move to appsettings.json
+                var database = client.GetDatabase(_configuration["MongoDB:Database"]);
 
                 return database;
             }).As<IMongoDatabase>();
