@@ -14,8 +14,22 @@ namespace MyMind.Web.Controllers
         private readonly ISessionFactory _sessionFactory;
 
         public TestController(ISessionFactory sessionFactory)
+            => this._sessionFactory = sessionFactory;
+
+        [HttpDelete]
+        public IActionResult DataBaseClear()
         {
-            _sessionFactory = sessionFactory;
+            using (var session = this._sessionFactory.Create())
+            {
+                var emotions = session.Get<Emotion>();
+
+                foreach (var e in emotions)
+                {
+                    session.Delete<Emotion>(e);
+                }
+            }
+
+            return Json("Deleted");
         }
 
         [HttpGet]
