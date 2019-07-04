@@ -29,8 +29,13 @@ namespace MyMind.Web.IoC.Modules
                 return database;
             }).As<IMongoDatabase>();
 
-            builder.RegisterType<Session>().As<ISession>();
-            builder.RegisterType<SessionFactory>().As<ISessionFactory>();
+            builder.RegisterType<Session>()
+                .As<ISession>()
+                .InstancePerLifetimeScope();
+
+            builder.RegisterType<SessionFactory>()
+                .As<ISessionFactory>()
+                .InstancePerLifetimeScope();
         }
     }
 }

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace MyMind.Web.Domain.Emotions.Services
 {
-    public interface IEmotionService
+    public class EmotionsService : IEmotionsService
     {
     }
 }

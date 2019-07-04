@@ -16,6 +16,7 @@ namespace MyMind.Web.IoC
         protected override void Load(ContainerBuilder builder)
         {
             builder.RegisterModule(new DatabaseModule(this._configuration));
+            builder.RegisterModule(new ServiceModule());
         }
     }
 }
