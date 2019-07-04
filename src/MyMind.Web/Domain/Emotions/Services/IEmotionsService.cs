@@ -7,6 +7,6 @@ namespace MyMind.Web.Domain.Emotions.Services
 {
     public interface IEmotionsService
     {
-        IQueryable<Emotion> GetAllEmotions();
+        IEnumerable<Emotion> GetAllEmotions();
     }
 }

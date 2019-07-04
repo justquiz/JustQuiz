@@ -9,14 +9,14 @@ namespace MyMind.Web.Domain.Emotions.Services
 {
     public class EmotionsService : IEmotionsService
     {
-        private ISessionFactory _sessionFactory;
+        private readonly ISessionFactory _sessionFactory;
 
         public EmotionsService(ISessionFactory sessionFactory)
         {
             this._sessionFactory = sessionFactory;
         }
 
-        public IQueryable<Emotion> GetAllEmotions()
+        public IEnumerable<Emotion> GetAllEmotions()
         {
             using (var session = this._sessionFactory.Create())
             {
