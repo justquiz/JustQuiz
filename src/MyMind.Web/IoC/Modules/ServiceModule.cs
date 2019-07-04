@@ -9,13 +9,9 @@ namespace MyMind.Web.IoC
 {
     public class ServiceModule : Module
     {
-        public ServiceModule()
-        {
-        }
-
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterType<IEmotionsService>()
+            builder.RegisterType<EmotionsService>()
                 .As<IEmotionsService>()
                 .InstancePerLifetimeScope();
         }

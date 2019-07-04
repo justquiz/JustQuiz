@@ -19,12 +19,8 @@ namespace MyMind.Web.Areas.Emotions
         [HttpPost]
         public IActionResult GetEmotions()
         {
-            using (var session = this._emotionsService.Create())
-            {
-                var emotions = session.Get<Emotion>();
-
-                return Json(emotions);
-            }
+            var emotions = this._emotionsService.GetAllEmotions();
+            return Json(emotions);
         }
     }
 }
