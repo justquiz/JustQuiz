@@ -1,1 +1,2 @@
 image: gitpod/workspace-dotnet-vnc
+image: gitpod/workspace-mongodb
