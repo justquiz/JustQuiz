@@ -16,7 +16,7 @@ namespace MyMind.Web.Areas.Emotions
             this._emotionsService = emotionsService;
         }
 
-        [HttpPost]
+        [HttpGet]
         public IActionResult GetEmotions()
         {
             var emotions = this._emotionsService.GetAllEmotions();
