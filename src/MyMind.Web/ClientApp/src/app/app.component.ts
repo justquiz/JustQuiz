@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
   error: any;
 
   ngOnInit(): void {
-    this._httpService.get('http://localhost:22077/api/Emotions/GetEmotions')
+    this._httpService.get('/api/Emotions/GetEmotions')
       .subscribe((data: any[]) => this.emotions = [...data], // success path
                   error => this.error = error); // error path
   }
