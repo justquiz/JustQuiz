@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this._httpService.get('/api/Emotions/GetEmotions')
-      .subscribe((data: any[]) => this.emotions = [...data], // success path
+      .subscribe((data: object[]) => this.emotions = [...data], // success path
                   error => this.error = error); // error path
   }
 
