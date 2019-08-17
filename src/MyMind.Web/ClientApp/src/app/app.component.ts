@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { IEmotion } from '../models/emotion';
 
 @Component({
   selector: 'app-root',
@@ -10,13 +11,13 @@ export class AppComponent implements OnInit {
 
   constructor(private _httpService: HttpClient) { }
 
-  emotions: object[] = [];
+  emotions: IEmotion[] = [];
   error: any;
 
   ngOnInit(): void {
-    this._httpService.get('/api/Emotions/GetEmotions')
-      .subscribe((data: object[]) => this.emotions = [...data], // success path
-                  error => this.error = error); // error path
+      this._httpService.get<IEmotion[]>('api/Emotions/GetEmotions')
+      .subscribe(values => this.emotions = values,
+                  error => this.error = error);
   }
 
   title = 'MyMind';
