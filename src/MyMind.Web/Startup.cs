@@ -42,7 +42,7 @@ namespace MyMind.Web
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new Info{Title = "My Mind", Version = "v1"});
+                c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo{Title = "My Mind", Version = "v1"});
             });
 
             var builder = new ContainerBuilder();
@@ -70,7 +70,7 @@ namespace MyMind.Web
                 c.RoutePrefix = "";
             });
 
-            app.UseMvc();
+            app.UseStaticFiles();
             app.UseRouting();
             app.UseEndpoints(routes =>
             {
