@@ -2,7 +2,11 @@ language: csharp
 dist: xenial
 sudo: required
 mono: none
-dotnet: 3.0
+addons:
+  snaps:
+  - name: dotnet-sdk
+    classic: true
+    channel: latest/beta
 before_script:
   - chmod -R a+x scripts
 script:
