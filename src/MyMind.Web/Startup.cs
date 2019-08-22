@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using MyMind.Web.Database;
 using MyMind.Web.IoC;
 using Swashbuckle.AspNetCore.Swagger;
@@ -15,9 +16,9 @@ namespace MyMind.Web
     public class Startup
     {
         public IConfiguration Configuration { get; }
-        private IContainer ApplicationContainer { get; set; }
+        private IContainer? ApplicationContainer { get; set; }
 
-        public Startup(IHostingEnvironment env)
+        public Startup(IWebHostEnvironment env)
         {
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
@@ -37,7 +38,7 @@ namespace MyMind.Web
                     .AllowAnyHeader();
             }));
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
 
             services.AddSwaggerGen(c =>
             {
@@ -53,7 +54,7 @@ namespace MyMind.Web
         }
 
 
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -69,11 +70,13 @@ namespace MyMind.Web
                 c.RoutePrefix = "";
             });
 
-            app.UseMvc(routes =>
+            app.UseMvc();
+            app.UseRouting();
+            app.UseEndpoints(routes =>
             {
-                routes.MapRoute(
-                    name: "default",
-                    template: "/api/{controller}/{action=Index}/{id?}");
+                routes.MapControllerRoute(
+                    "default",
+                    "/api/{controller}/{action=Index}/{id?}");
             });
         }
     }
