@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { IEmotion } from '../models/emotion';
+import { IEmotion } from '../models/iEmotion';
 
 @Component({
   selector: 'app-root',
