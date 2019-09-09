@@ -38,7 +38,10 @@ namespace MyMind.Web
                     .AllowAnyHeader();
             }));
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+            services.AddMvcCore()
+                .SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
+                .AddNewtonsoftJson()
+                .AddApiExplorer();
 
             services.AddSwaggerGen(c =>
             {

@@ -3,7 +3,39 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMind.Web", "MyMind.Web\MyMind.Web.csproj", "{E2503ABF-1657-431F-B34D-B213F7C02600}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyMind.Web", "MyMind.Web\MyMind.Web.csproj", "{E2503ABF-1657-431F-B34D-B213F7C02600}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMind.Commons", "MyMind.Commons\MyMind.Commons.csproj", "{50481AD8-CBAF-4D2A-BA98-04AE789F6C8C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MyMind.Tests", "MyMind.Tests", "{677CAA19-E171-46A1-855E-BC537868DBC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMind.Tests.UnitTests", "MyMind.Tests.UnitTests\MyMind.Tests.UnitTests.csproj", "{BF3CD13E-03D3-4318-B321-1516033B51F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMind.Tests.IntegrationTests", "MyMind.Tests.IntegrationTests\MyMind.Tests.IntegrationTests.csproj", "{F1534334-5CFE-409C-940B-802994E0655B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MyMind.Automats", "MyMind.Automats", "{44B78476-A2E5-446D-A9A6-15BFCB75A5B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMind.Automats.UsersEmotionsReportExcelGenerator", "MyMind.Automats.UsersEmotionsReportExcelGenerator\MyMind.Automats.UsersEmotionsReportExcelGenerator.csproj", "{7C71F04E-6CAB-4ED8-BE0B-B29E626CCFFC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MyMind.Infrastructure", "MyMind.Infrastructure", "{5BE93C4A-498F-4D8C-B8EE-0A5904EAD68B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMind.Infrastructure.Cqrs", "MyMind.Infrastructure.Cqrs\MyMind.Infrastructure.Cqrs.csproj", "{C5F3781E-B5C5-45F6-8E1B-92C770C8D91C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMind.Infrastructure.MongoDB", "MyMind.Infrastructure.MongoDB\MyMind.Infrastructure.MongoDB.csproj", "{EA450C2B-58BF-4525-A3BD-9FF6BE47A920}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMind.Infrastructure.IoC", "MyMind.Infrastructure.IoC\MyMind.Infrastructure.IoC.csproj", "{511773F1-6808-4DE3-94C9-4532111EFCB6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MyMind.Domain", "MyMind.Domain", "{4EF5A74A-2871-4673-AFC1-D2A209067A26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMind.Domain.Users", "MyMind.Domain.Users\MyMind.Domain.Users.csproj", "{ADE351DB-8CF2-4AEC-AE72-1248A370D410}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMind.Domain.Moods", "MyMind.Domain.Moods\MyMind.Domain.Moods.csproj", "{136E07FD-5BCE-43CC-9DA5-A385598097F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMind.Domain.Emotions", "MyMind.Domain.Emotions\MyMind.Domain.Emotions.csproj", "{C736C7EA-5027-4D42-B656-5C293B196AF9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MyMind.Integration", "MyMind.Integration", "{8C5FA399-A97F-4FF6-9107-B65C9BF63C47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMind.Integration.GoogleDrive", "MyMind.Integration.GoogleDrive\MyMind.Integration.GoogleDrive.csproj", "{D07E42A3-5042-4AF1-8B66-0E497DF34CC4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +47,65 @@ Global
 		{E2503ABF-1657-431F-B34D-B213F7C02600}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2503ABF-1657-431F-B34D-B213F7C02600}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2503ABF-1657-431F-B34D-B213F7C02600}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50481AD8-CBAF-4D2A-BA98-04AE789F6C8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50481AD8-CBAF-4D2A-BA98-04AE789F6C8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50481AD8-CBAF-4D2A-BA98-04AE789F6C8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50481AD8-CBAF-4D2A-BA98-04AE789F6C8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF3CD13E-03D3-4318-B321-1516033B51F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF3CD13E-03D3-4318-B321-1516033B51F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF3CD13E-03D3-4318-B321-1516033B51F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF3CD13E-03D3-4318-B321-1516033B51F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1534334-5CFE-409C-940B-802994E0655B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1534334-5CFE-409C-940B-802994E0655B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1534334-5CFE-409C-940B-802994E0655B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1534334-5CFE-409C-940B-802994E0655B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C71F04E-6CAB-4ED8-BE0B-B29E626CCFFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C71F04E-6CAB-4ED8-BE0B-B29E626CCFFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C71F04E-6CAB-4ED8-BE0B-B29E626CCFFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C71F04E-6CAB-4ED8-BE0B-B29E626CCFFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5F3781E-B5C5-45F6-8E1B-92C770C8D91C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5F3781E-B5C5-45F6-8E1B-92C770C8D91C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5F3781E-B5C5-45F6-8E1B-92C770C8D91C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5F3781E-B5C5-45F6-8E1B-92C770C8D91C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA450C2B-58BF-4525-A3BD-9FF6BE47A920}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA450C2B-58BF-4525-A3BD-9FF6BE47A920}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA450C2B-58BF-4525-A3BD-9FF6BE47A920}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA450C2B-58BF-4525-A3BD-9FF6BE47A920}.Release|Any CPU.Build.0 = Release|Any CPU
+		{511773F1-6808-4DE3-94C9-4532111EFCB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{511773F1-6808-4DE3-94C9-4532111EFCB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{511773F1-6808-4DE3-94C9-4532111EFCB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{511773F1-6808-4DE3-94C9-4532111EFCB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADE351DB-8CF2-4AEC-AE72-1248A370D410}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADE351DB-8CF2-4AEC-AE72-1248A370D410}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADE351DB-8CF2-4AEC-AE72-1248A370D410}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADE351DB-8CF2-4AEC-AE72-1248A370D410}.Release|Any CPU.Build.0 = Release|Any CPU
+		{136E07FD-5BCE-43CC-9DA5-A385598097F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{136E07FD-5BCE-43CC-9DA5-A385598097F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{136E07FD-5BCE-43CC-9DA5-A385598097F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{136E07FD-5BCE-43CC-9DA5-A385598097F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C736C7EA-5027-4D42-B656-5C293B196AF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C736C7EA-5027-4D42-B656-5C293B196AF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C736C7EA-5027-4D42-B656-5C293B196AF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C736C7EA-5027-4D42-B656-5C293B196AF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D07E42A3-5042-4AF1-8B66-0E497DF34CC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D07E42A3-5042-4AF1-8B66-0E497DF34CC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D07E42A3-5042-4AF1-8B66-0E497DF34CC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D07E42A3-5042-4AF1-8B66-0E497DF34CC4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BF3CD13E-03D3-4318-B321-1516033B51F8} = {677CAA19-E171-46A1-855E-BC537868DBC2}
+		{F1534334-5CFE-409C-940B-802994E0655B} = {677CAA19-E171-46A1-855E-BC537868DBC2}
+		{7C71F04E-6CAB-4ED8-BE0B-B29E626CCFFC} = {44B78476-A2E5-446D-A9A6-15BFCB75A5B5}
+		{C5F3781E-B5C5-45F6-8E1B-92C770C8D91C} = {5BE93C4A-498F-4D8C-B8EE-0A5904EAD68B}
+		{EA450C2B-58BF-4525-A3BD-9FF6BE47A920} = {5BE93C4A-498F-4D8C-B8EE-0A5904EAD68B}
+		{511773F1-6808-4DE3-94C9-4532111EFCB6} = {5BE93C4A-498F-4D8C-B8EE-0A5904EAD68B}
+		{ADE351DB-8CF2-4AEC-AE72-1248A370D410} = {4EF5A74A-2871-4673-AFC1-D2A209067A26}
+		{136E07FD-5BCE-43CC-9DA5-A385598097F5} = {4EF5A74A-2871-4673-AFC1-D2A209067A26}
+		{C736C7EA-5027-4D42-B656-5C293B196AF9} = {4EF5A74A-2871-4673-AFC1-D2A209067A26}
+		{D07E42A3-5042-4AF1-8B66-0E497DF34CC4} = {8C5FA399-A97F-4FF6-9107-B65C9BF63C47}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {322FF32D-2382-4BC9-B339-ACCDBB22CF23}

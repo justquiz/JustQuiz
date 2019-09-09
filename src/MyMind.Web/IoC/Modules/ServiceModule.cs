@@ -14,6 +14,7 @@ namespace MyMind.Web.IoC
             builder.RegisterType<EmotionsService>()
                 .As<IEmotionsService>()
                 .InstancePerLifetimeScope();
+
         }
     }
 }
