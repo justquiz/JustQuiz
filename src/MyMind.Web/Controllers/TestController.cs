@@ -34,7 +34,7 @@ namespace MyMind.Web.Controllers
             return Json("Deleted");
         }
 
-        [HttpGet] //todo delete
+        [HttpGet] //todo delete, but we need any test data (for example backup file with data or common database like mlab)
         public IActionResult DatabaseInit()
         {
             var emotions = new List<Emotion>
