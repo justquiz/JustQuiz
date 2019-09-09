@@ -34,7 +34,7 @@ namespace MyMind.Web.Controllers
             return Json("Deleted");
         }
 
-        [HttpGet]
+        [HttpGet] //todo delete
         public IActionResult DatabaseInit()
         {
             var emotions = new List<Emotion>
