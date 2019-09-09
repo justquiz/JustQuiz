@@ -37,6 +37,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMind.Integration.GoogleDrive", "MyMind.Integration.GoogleDrive\MyMind.Integration.GoogleDrive.csproj", "{D07E42A3-5042-4AF1-8B66-0E497DF34CC4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMind.Domain", "MyMind.Domain\MyMind.Domain.csproj", "{E075D62E-0AA2-41B3-A131-D25E83280893}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -91,6 +93,10 @@ Global
 		{D07E42A3-5042-4AF1-8B66-0E497DF34CC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D07E42A3-5042-4AF1-8B66-0E497DF34CC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D07E42A3-5042-4AF1-8B66-0E497DF34CC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E075D62E-0AA2-41B3-A131-D25E83280893}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E075D62E-0AA2-41B3-A131-D25E83280893}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E075D62E-0AA2-41B3-A131-D25E83280893}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E075D62E-0AA2-41B3-A131-D25E83280893}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -106,6 +112,7 @@ Global
 		{136E07FD-5BCE-43CC-9DA5-A385598097F5} = {4EF5A74A-2871-4673-AFC1-D2A209067A26}
 		{C736C7EA-5027-4D42-B656-5C293B196AF9} = {4EF5A74A-2871-4673-AFC1-D2A209067A26}
 		{D07E42A3-5042-4AF1-8B66-0E497DF34CC4} = {8C5FA399-A97F-4FF6-9107-B65C9BF63C47}
+		{E075D62E-0AA2-41B3-A131-D25E83280893} = {4EF5A74A-2871-4673-AFC1-D2A209067A26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {322FF32D-2382-4BC9-B339-ACCDBB22CF23}
